@@ -1,184 +1,149 @@
-<!DOCTYPE html> 
-<html lang ="em"> 
-	<head> 
+<!DOCTYPE html>
+<html lang ="em">
+	<head>
 		<meta charset"utf-8">
-		<title> Matthew Cucuzza | Software Engineering Student </title>
+		<title> Matthew A. Cucuzza | Software Engineering Student </title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Bootstrap Import-->
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  		<script src="http://canvasjs.com/assets/script/canvasjs.min.js"></script>
-  		<link href="style.css" rel="stylesheet" type="text/css">
-  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  		<script src="site.js"></script>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+		<!-- Stylesheet -->
+  	<link href="style.css" rel="stylesheet" type="text/css">
+
+		<!-- Font Awesome Icons & Google Font Import -->
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+		<!-- Javascript -->
+  	<script src="site.js"></script>
+
+		<!-- Highcharts -->
+		<script src="https://code.highcharts.com/highcharts.js"></script>
+		<script src="https://code.highcharts.com/modules/exporting.js"></script>
 	</head>
-	<body> 
-	<!-- Start of scrolling page -->
+	<body>
+	<!-- Scrolling Body -->
 		<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-		<!-- Navbar start-->
-		<nav class="navbar navbar-default navbar-fixed-top">
+
+		<!-- Navbar -->
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 			<div class="container">
 				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" target="#myNavbar">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 						<span class="icon-bar"></span>
-       					<span class="icon-bar"></span>
-        				<span class="icon-bar"></span> 
-      				</button>
-      			</div> 
-      			<div class="collapse navbar-collapse" id="myNavbar">
-      				<ul class ="nav navbar-nav navbar-right">
-      					<li><a href="#about">ABOUT</a></li>
-      					<li><a href="#skills">SKILLS</a></li>
-      					<li><a href="#contact">CONTACT</a></li>
-      					<li><a href="resume.pdf" target="_blank">RESUME</a></li>
-      				</ul>
-      			</div>
-      		</div>
-      	</nav>
-      	<!-- Startup view -->
-      	<div id="home" class="head">
-			<div class="jumbotron text-center">
-				<div class="title col-md-6 col-md-offset-3">
-					<img src="images/MCLogo.png" class="nameLogo"></img>
-					<h4 class="shortBio"><i class="styleGlyph fa fa-terminal blink"></i> Student. Caffeine Addict. Aspiring Developer.</h4>
-					<a href="#about" class="btn btn-primary btn-sm" role="button"><b>Learn More About Me</b></a>
+       			<span class="icon-bar"></span>
+        		<span class="icon-bar"></span>
+      		</button>
+      	</div>
+      	<div class="collapse navbar-collapse" id="myNavbar">
+      		<ul class ="nav navbar-nav navbar-right">
+      			<li><a href="#aboutSection">ABOUT</a></li>
+      			<li><a href="#skillsSection">SKILLS</a></li>
+						<li><a href="#projectSection">PROJECTS</a></li>
+      			<li><a href="#contactSection">CONTACT</a></li>
+      		</ul>
+      	</div>
+      </div>
+    </nav>
+
+      <!-- Title View -->
+			<div class="container-fluid" id="titleSection">
+					<img src="images/pic.jpg" class="picture"></img>
+					<h4 class="tagline"><i class="blinker fa fa-terminal blink"></i> Hello, my name is <b id="colorText">Matt Cucuzza!</b></h4>
+					<!-- <a href="#aboutSection" class="btn btn-primary btn-sm" role="button"><b>Learn More About Me</b></a> -->
+			</div>
+		</div>
+
+		<!-- About Section -->
+		<!--- JAVA SCALA HTML CSS JAVASCRIPT UML R PYTHON SQL--->
+		<div class="container-fluid" id ="aboutSection">
+			<h4 id ="aboutTitle">About Matt</h4>
+			<div id ="about">
+				<!-- <div id = "circle"></div> -->
+				<div id="terminalAbout">
+					<br>
+					<p id="prompt">>  Matt.location</p>
+					<p id="answer">=> "Staten Island, New York"</p>
+					<p id="prompt">>  Matt.education</p>
+					<p id="answer">=> "Quinnipiac University"</p>
+					<p id="prompt">>  Matt.major</p>
+					<p id="answer">=> "Software Engineering"</p>
+					<p id="prompt">>  Matt.minor</p>
+					<p id="answer">=> "Mathematics"</p>
+					<p id="prompt">>  Matt.interests</p>
+					<p id="answer">=> ["coding", "watching soccer", "hanging with friends", "drinking coffee", "listening to music"]</p>
+					<p id="prompt">>  Matt.resume</p>
+					<a id="resume" href="CucuzzaResume.pdf">=> resume.pdf</a>
 				</div>
 			</div>
 		</div>
 
-		<!-- About Me Section -->
-		<div id="about" class="container-fluid contentStyle"> 
-			<div class="row">
-				<div class="col-sm-8">
-					<h2> Hello, my name is <b class="coloredText">Matt.</b></h2>
-					<div class="divider"></div>
-					<h5 class="content"><span class="styleGlyph glyphicon glyphicon-education"></span> I attend Quinnipiac University in Hamden, CT.</h5>
-					<h5 class="content"><i class="styleGlyph fa fa-book"></i> Currently studying Software Engineering with a Mathematics minor.</h5>
-					<h5 class="content"><span class="styleGlyph glyphicon glyphicon-home"></span> Home for me is in Staten Island, New York.</h5>
-					<h5 class="content"><i class="styleGlyph fa fa-users"></i> Family & friends are very important to me. </h5>
-					<h5 class="content"><i class="styleGlyph fa fa-heart"></i> I'm a passionate soccer fan. </h5>
-					<h5 class="content"><i class="styleGlyph fa fa-futbol-o"></i> I'm a hardcore A.C. Milan fan. 
-					<h5 class="content"><i class="styleGlyph fa fa-code"></i> I love to program.</h5> 
-					<h5 class="content"><span class="styleGlyph glyphicon glyphicon-film"></span> I'm a huge movie & TV show nerd.</h5>
-					<h5 class="content"><i class="styleGlyph fa fa-gamepad"></i> I enjoy playing video games.</h5> 
-				</div>
-				<div class="col-sm-4">
-					<img src="images/profile.jpg" class="img-thumbnail" alt "me">
-				</div>
+		<!-- Skills -->
+		<div class="container-fluid" id ="skillsSection">
+			<h4 id ="aboutTitle">Matt's Languages</h4>
+			<div id ="skills">
+				<div id="container" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
 			</div>
 		</div>
 
-		<!-- Skills Section -->
-		<div id="skills" class="container-fluid text-center contentStyle2">
+		<!-- Projects -->
+		<div class="container-fluid" id="projectSection">
+			<h4 id ="aboutTitle">Projects by Matt</h4>
 			<div class="row">
-			<!-- Languages -->
-				<div class="text-center">
-					<h2> Languages </h2>
-					<h5 class="pageTitle"><i>Learning is a treasure that will follow its owner everywhere.</i></h5>
-					<div class="divider small"></div>
-				</div>
-				<div class="col-sm-12 ">
-				<!-- Reference to JS chart -->
-					<div id="languageChart" style="height: 300px; width: 100%;"></div>
-				</div>
-			</div>
-		</div>
-		<div id="skills" class="container-fluid text-center contentStyle2">
-			<div class="text-center">
-			<!-- Applications -->
-				<h2> Applications </h2>
-				<div class="divider small"></div>
-			</div>
-			<div class="row">
-				<div class="col-sm-4">
-					<h4> <img src="images/git.png" alt="Github"> Github </h4>
-					<p>GitHub is used as a hub to monitor any changes made to projects (both personal and academic) that I am working on.</p>  
-				</div>
-				<div class="col-sm-4">
-					<h4> <img src="images/eclipse.png" alt="Github"> Eclipse </h4>
-					<p> Eclipse is used when developing new java applications or enhancing old applications. Various plugins, such as JUnit, are used to test software quality.</p> 
-				</div>
-				<div class="col-sm-4">
-					<h4> <img src="images/photoshop.png" alt="Github"> Photoshop </h4>
-					<p> Photoshop is a program I started off using for fun, and wound up becoming very proficient in it. I was able to design posters, profile pictures, and cover photos for various organizations at my school.</p>
-				</div>
-			</div>
-			<!-- 
-			<div class="text-center">
-				<h2> Qualities </h2>
-				<div class="divider small"></div>
-					<div class="col-sm-4">
-						<h4> Verbal Communication </h4>
-						<canvas id="myChart" width="100" height="100"></canvas>
+				<div class="col-md-4">
+					<div class="project">
+						<img src="images/SE2.png" id="projectPicture"></img>
+						<br>
+						<div id="projectDescription">
+							<b class="projectTitle">Quinnipiac Software Engineering Website:</b>
+							<p>A website developed using Bootstrap, which shows potential Quinnipiac students what software engineering is like at Quinnipiac.</p>
+						</div>
 					</div>
-			</div>
-		</div> -->
-
-		<div id="skills" class="container-fluid contentStyle2">
-			<div class="row">
-				<div class="text-center">
-				<!-- Work Process -->
-					<h2> Work Process </h2>
-					<p><i>"Do not fear mistakes. You will know failure. Continue to reach out." - Benjamin Franklin</i></p>
-					<div class="divider small"></div>
 				</div>
-				<div class="text-center">
-					<h4><i class="styleGlyph fa fa-users"></i> [Gather Requirements] </h4>
-					<h4 class="next"><i class="styleGlyph fa fa-arrow-down"></i></h4>
-					<h4><i class="styleGlyph fa fa-sitemap"></i> [Design System] </h4>
-					<h4 class="next"><i class="styleGlyph fa fa-arrow-down"></i></h4>
-					<h4><span class="styleGlyph glyphicon glyphicon-console"></span> [Implement Design]</h4>
-					<h4 class="next"><i class="styleGlyph fa fa-arrow-down"></i></h4>
-					<h4><i class="styleGlyph fa fa-bug"></i> [Test] </h4>
-					<h4 class="next"><i class="styleGlyph fa fa-arrow-down"></i></h4>
-					<h4><i class="styleGlyph fa fa-paper-plane"></i> [Release] </h4>
+				<div class="col-md-4">
+					<div class="project">
+						<img src="images/WFMS.png" id="projectPicture"></img>
+						<br>
+						<div id="projectDescription">
+							<b class="projectTitle">Workflow Management System:</b>
+							<p>A web-based versatile workflow engine where the backend processes states and tasks using a deterministic finite automata. Currently being developed using Meteor’s Javascript framework.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="project">
+						<img src="images/db.png" id="projectPicture"></img>
+						<br>
+						<div id="projectDescription">
+							<b class="projectTitle">OMDb Movie Database:</b>
+							<p>A database system written with Python as the frontend and backend, using SQLite to retrieve data about movies from OMDBd's open-source API.</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-		<div id="skills" class="container-fluid contentStyle2">
-			<div class="row">
-				<div class="text-center">
-				<!-- My Views -->
-					<h2>My Views</h2>
-					<div class="divider small"></div>
-				</div>
-				<div class="col-sm-4">
-					<h3 class="text-center"><span class="styleGlyph glyphicon glyphicon-th-large"></span></h3>
-					<h3 class="text-center">Listening to the customer's requirements is the key to creating the <i><b class="coloredText">right</b></i> product </h3>
-				</div>
-				<div class="col-sm-4">
-					<h3 class="text-center"><span class="styleGlyph glyphicon glyphicon-th-large"></span></h3>
-					<h3 class="text-center">Designing is the path to creating the most <i><b class="coloredText">efficient</b></i> system</h3>
-				</div>
-				<div class="col-sm-4">
-					<h3 class="text-center"><span class="styleGlyph glyphicon glyphicon-th-large"></span></h3>
-					<h3 class="text-center">Communicating with your team is the <i><b class="coloredText">easiest</b></i> way to ensure no unnecessary mistakes are made </h3>
-				</div>
-			</div>
 
 		<!-- Contact Section -->
-		<div id="contact" class="container-fluid contentStyle2 contact">
-			<div class="row">
-				<div class="text-center">
-					<h2> Contact Information</h2>
-					<div class="divider small"></div>
+		<div class="container-fluid" id="contactSection">
+			<h4 id ="aboutTitle">Contact Matt</h4>
+				<div class="contact">
+					<h5> <a href="http://www.github.com/mattcucuzza" class="contactButton btn btn-default btn-circle"><i class="fa fa-github"></i></a> Check out my GitHub</h5>
 				</div>
-				<div class="col-sm-6 text-center">
-					<h5> <a href="http://www.github.com/mattcucuzza" target="_blank" class="contactButton btn btn-default btn-circle"><i class="fa fa-github"></i></a> Check out my GitHub</h5>
+				<div class="contact">
+					<h5><a href="mailto:MatthewACucuzza@gmail.com" class="contactButton btn btn-default btn-circle"><i class="fa fa-envelope-square"></i></a> Send me an email</h5>
 				</div>
-				<div class="col-sm-6 text-center">
-					<h5><a href="mailto:MACucuzza@quinnipiac.com" class="contactButton btn btn-default btn-circle"><i class="fa fa-envelope-square"></i></a> Send me an email</h5>
-				</div>
-			</div>
 		</div>
 
 		<!-- Footer -->
-		<footer class="container-fluid text-center"> 
+		<footer class="container-fluid" id="contactSection">
 			<a href="#myPage" title="Top of Page">
 				<span class="scrollIcon glyphicon glyphicon-triangle-top"></span>
 			</a>
-			<p><i><span class="glyphicon glyphicon-copyright-mark"></span> 2016 Matthew Cucuzza. All rights reserved.<i></p> 
+			<p id ="foot"><i><span class="glyphicon glyphicon-copyright-mark"></span> 2016 Matthew Cucuzza. All rights reserved.<i></p>
 		</footer>
 	</body>
 </html>

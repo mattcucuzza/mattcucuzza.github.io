@@ -2,70 +2,89 @@
 $(document).ready(function() {
 	$(".navbar a, footer a[href='#myPage'], .btn-sm").on('click', function(event) {
 		event.preventDefault();
-		var hash = this.hash; 
+		var hash = this.hash;
 		$('html, body').animate({
 			scrollTop: $(hash).offset().top
 		}, 900, function() {
-			window.location.hash = hash; 
+			window.location.hash = hash;
 		});
 	});
 })
 
-/* Chart Generator Effect */
-window.onload = function () {
-	var chart = new CanvasJS.Chart("languageChart", {
-		backgroundColor: null,
-		theme: "theme1",//theme1
-		animationEnabled: true,   // change to true
-		animationDuration: 3000,
-		interactivityEnabled: false,
-		axisX:{
-			labelFontColor: "#323232"
-		},
-		axisY:{
-			title: "Proficiency Level",
-			titleFontColor: "#323232",
-			labelFontColor:"#323232"
-		},
-		data: [{
-		// Change type to "bar", "area", "spline", "pie",etc.
-			type: "column",
-			color: "#92468e",
-			dataPoints: [
-				{label: "Java",  y: 82},
-				{label: "Scala",  y: 55},
-				{label: "HTML",  y: 79},
-				{label: "CSS", y: 75},
-				{label: "Javascript", y: 65},
-				{label: "UML",  y: 75},
-				{label: "R",  y: 40}
-			]
-		}]
-	});
-	chart.render();
-} //end chart 
-
-$(document).ready(function() {
-	var data = [
-    	{
-        	value: 300,
-        	color:"#F7464A",
-        	highlight: "#FF5A5E",
-        	label: "Red"
-    	},
-    	{
-        	value: 50,
-        	color: "#46BFBD",
-        	highlight: "#5AD3D1",
-        	label: "Green"
-    	},
-    	{
-        	value: 100,
-        	color: "#FDB45C",
-        	highlight: "#FFC870",
-        	label: "Yellow"
-    	}
-	];
-	var ctx = document.getElementById("myChart").getContext("2d");
-	var myDoughnutChart = new Chart(ctx).Doughnut(data,options);
-}) // end 
+$(function () {
+	// Highcharts.setOptions({
+	//  colors: ['#8bcedd']
+	// });
+	var chart;
+    $(document).ready(function () {
+        // Build the chart
+        Highcharts.chart('container', {
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie',
+								backgroundColor: null,
+            },
+            title: {
+                text: ''
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>',
+								borderColor: null
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: true,
+												color: '#FAFAFA',
+												connectorColor: '#FAFAFA',
+												borderWidth: 0,
+												style: {
+													textShadow: false
+												}
+												// borderColor: '#FAFAFA',
+                    },
+                    showInLegend: false
+                }
+            },
+						credits: {
+							enabled: false
+						},
+						exporting: {
+							enabled: false
+						},
+            series: [{
+                name: 'Efficiency',
+                colorByPoint: true,
+                data: [{
+                    name: 'HTML',
+                    y: 25.00
+                }, {
+                    name: 'CSS',
+                    y: 25.00
+                }, {
+                    name: 'Python',
+                    y: 15.00
+                }, {
+                    name: 'Java',
+                    y: 25.00
+                }, {
+                    name: 'Javascript',
+                    y: 15.00
+                }, {
+                    name: 'SQL',
+                    y: 8.00
+                }, {
+                    name: 'Scala',
+                    y: 5.00
+                }, {
+                    name: 'R',
+                    y: 2.00
+                }, ]
+            }]
+        });
+    });
+});
