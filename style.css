@@ -181,6 +181,10 @@ body {
 	background-color: #C26868;
 }
 
+.skills {
+
+}
+
 #projectSection {
 	background-color: #6dd686;
 }
@@ -265,7 +269,6 @@ footer .scrollIcon:hover {
 
 @media screen and (max-width:950px) {
 	.project {
-		width: 40%;
 		margin: auto;
 		margin-bottom: 10px;
 	},
