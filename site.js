@@ -30,7 +30,7 @@ $(function () {
                 text: ''
             },
             tooltip: {
-                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>',
+                pointFormat: '{series.name}: <b>{point.y:1f} years</b>',
 								borderColor: null
             },
             plotOptions: {
@@ -57,32 +57,32 @@ $(function () {
 							enabled: false
 						},
             series: [{
-                name: 'Efficiency',
+                name: 'Experience',
                 colorByPoint: true,
                 data: [{
                     name: 'HTML',
-                    y: 25.00
+                    y: 2
                 }, {
                     name: 'CSS',
-                    y: 25.00
+                    y: 2
                 }, {
                     name: 'Python',
-                    y: 15.00
+                    y: 1
                 }, {
                     name: 'Java',
-                    y: 25.00
+                    y: 4
                 }, {
                     name: 'Javascript',
-                    y: 15.00
+                    y: 2
                 }, {
                     name: 'SQL',
-                    y: 8.00
+                    y: 1
                 }, {
                     name: 'Scala',
-                    y: 5.00
+                    y: 4
                 }, {
                     name: 'R',
-                    y: 2.00
+                    y: 1
                 }, ]
             }]
         });
