@@ -44,6 +44,7 @@
       			<li><a href="#aboutSection">ABOUT</a></li>
       			<li><a href="#skillsSection">SKILLS</a></li>
 						<li><a href="#projectSection">PROJECTS</a></li>
+						<li><a href="#achieveSection">ACHIEVEMENTS</a></li>
       			<li><a href="#contactSection">CONTACT</a></li>
       		</ul>
       	</div>
@@ -52,14 +53,13 @@
 
       <!-- Title View -->
 			<div class="container-fluid" id="titleSection">
-					<img src="images/pic.jpg" class="picture"></img>
-					<h4 class="tagline"><i class="blinker fa fa-terminal blink"></i> Hello, my name is <b id="colorText">Matt Cucuzza!</b></h4>
-					<!-- <a href="#aboutSection" class="btn btn-primary btn-sm" role="button"><b>Learn More About Me</b></a> -->
+				<img src="images/pic.jpg" class="picture"></img>
+				<h4 class="tagline"><i class="blinker fa fa-terminal blink"></i> Hello, my name is <b id="colorText">Matt Cucuzza!</b></h4>
+				<a href="#aboutSection" class="btn btn-primary btn-sm" role="button"><b>Learn About Matt</b></a>
 			</div>
 		</div>
 
 		<!-- About Section -->
-		<!--- JAVA SCALA HTML CSS JAVASCRIPT UML R PYTHON SQL--->
 		<div class="container-fluid" id ="aboutSection">
 			<h4 id ="aboutTitle">About Matt</h4>
 			<div id ="about">
@@ -77,14 +77,14 @@
 					<p id="prompt">>  Matt.interests</p>
 					<p id="answer">=> ["coding", "watching soccer", "hanging with friends", "drinking coffee", "listening to music"]</p>
 					<p id="prompt">>  Matt.resume</p>
-					<a id="resume" href="CucuzzaResume.pdf">=> resume.pdf</a>
+					<a id="resume" href="resume.pdf">=> resume.pdf</a>
 				</div>
 			</div>
 		</div>
 
 		<!-- Skills -->
 		<div class="container-fluid" id ="skillsSection">
-			<h4 id ="aboutTitle">Matt's Languages</h4>
+			<h4 id ="aboutTitle">Matt's Programming Languages</h4>
 			<div class ="col-md-6 col-md-offset-3 skills">
 				<div id="container" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
 			</div>
@@ -96,17 +96,17 @@
 			<div class="row">
 				<div class="col-md-4">
 					<div class="project">
-						<img src="images/SE2.png" id="projectPicture" data-toggle="modal" data-target="#myModal"></img>
+						<a href="https://github.com/mattcucuzza/SEWebsite"><img src="images/SEWebsite.png" id="projectPicture" data-toggle="modal" data-target="#myModal" title ="Check Out Project!"></img></a>
 						<br>
 						<div id="projectDescription">
 							<b class="projectTitle">Quinnipiac Software Engineering Website:</b>
-							<p>A website developed using Bootstrap, which shows potential Quinnipiac students what software engineering is like at Quinnipiac.</p>
+							<p>A website developed for a HCI class using Bootstrap, which shows potential Quinnipiac students what software engineering is like at Quinnipiac.</p>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="project">
-						<img src="images/WFMS.png" id="projectPicture" data-toggle="modal" data-target="#myModal"></img>
+						<a href="https://github.com/bgillHub/WorkflowSystem"><img src="images/WFMS.png" id="projectPicture" data-toggle="modal" data-target="#myModal" title ="Check Out Project!"></img></a>
 						<br>
 						<div id="projectDescription">
 							<b class="projectTitle">Workflow Management System:</b>
@@ -116,13 +116,64 @@
 				</div>
 				<div class="col-md-4">
 					<div class="project">
-						<img src="images/db.png" id="projectPicture" data-toggle="modal" data-target="#myModal"></img>
+						<a href="https://github.com/mattcucuzza/dbtermproject"><img src="images/db.png" id="projectPicture" data-toggle="modal" data-target="#myModal" title ="Check Out Project!"></img></a>
 						<br>
 						<div id="projectDescription">
 							<b class="projectTitle">OMDb Movie Database:</b>
-							<p>A database system written with Python as the frontend and backend, using SQLite to retrieve data about movies from OMDBd's open-source API.</p>
+							<p>A database application which uses Python to communicate with SQLite to retrieve data about movies from OMDBd's open-source API. The front-end was created using Python's tkinter GUI package.</p>
 						</div>
 					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="project">
+						<a href="https://github.com/mattcucuzza/WeatherChecker"><img src="images/Weather.png" id="projectPicture" data-toggle="modal" data-target="#myModal" title ="Check Out Project!"></img></a>
+						<br>
+						<div id="projectDescription">
+							<b class="projectTitle">WeatherChecker:</b>
+							<p>A Javascript application written using Meteor's framework which pulls data from Yahoo! to display the current weather and 5 day forecast for a user specified location. </p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="project">
+						<a href="https://github.com/mattcucuzza/Checkbook"><img src="images/Checkbook.png" id="projectPicture" data-toggle="modal" data-target="#myModal" title ="Check Out Project!"></img></a>
+						<br>
+						<div id="projectDescription">
+							<b class="projectTitle">Checkbook Application</b>
+							<p>A basic checkbook Java application that keeps track of withdraws and deposits and calculates a cumulative account balance.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="project">
+						<a href="https://github.com/mattcucuzza/FindTheLady"><img src="images/FindTheLady.png" id="projectPicture" data-toggle="modal" data-target="#myModal" title ="Check Out Project!"></img></a>
+						<br>
+						<div id="projectDescription">
+							<b class="projectTitle">FindTheLady:</b>
+							<p>A virtual card game written in Java using the javax.swing package to implement a UI. The objective of the player is to find the Queen card out of a set of 3 cards.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Achievements -->
+		<div class="container-fluid" id="achieveSection">
+			<h4 id ="aboutTitle">Matt's Achievements</h4>
+			<div class="row">
+				<div class="col-md-4 text-center">
+					<i class="fa fa-trophy fa-3x" aria-hidden="true"></i>
+					<h4>-- Runner Up --<br>Spring 2016 Quinnipiac University Hackathon</h4>
+				</div>
+				<div class="col-md-4 text-center">
+					<i class="fa fa-trophy fa-3x" aria-hidden="true"></i>
+					<h4>-- Runner Up --<br>Fall 2016 Quinnipiac University Hackathon</h4>
+				</div>
+				<div class="col-md-4 text-center">
+					<i class="fa fa-trophy fa-3x" aria-hidden="true"></i>
+					<h4>-- Dean's List --<br>Fall 2016 Semester</h4>
 				</div>
 			</div>
 		</div>
@@ -131,22 +182,22 @@
 		<div class="container-fluid" id="contactSection">
 			<h4 id ="aboutTitle">Contact Matt</h4>
 				<div class="contact">
-					<h5><a href="http://www.github.com/mattcucuzza" class="contactButton btn btn-default btn-circle"><i class="fa fa-github"></i></a> Check out my GitHub</h5>
+					<h5><a href="http://www.github.com/mattcucuzza" class="contactButton btn btn-default btn-circle"><i class="fa fa-github fa-3x"></i><br>Check out my GitHub</h5></a>
 				</div>
 				<div class="contact">
-					<h5><a href="http://www.linkedin.com/in/matthewcucuzza" class="contactButton btn btn-default btn-circle"><i class="fa fa-linkedin-square"></i></a> Connect on LinkedIn</h5>
+					<h5><a href="http://www.linkedin.com/in/matthewcucuzza" class="contactButton btn btn-default btn-circle"><i class="fa fa-linkedin-square fa-3x"></i><br>Connect on LinkedIn</h5></a>
 				</div>
 				<div class="contact">
-					<h5><a href="mailto:MatthewACucuzza@gmail.com" class="contactButton btn btn-default btn-circle"><i class="fa fa-envelope-square"></i></a> Send me an email</h5>
+					<h5><a href="mailto:MatthewACucuzza@gmail.com" class="contactButton btn btn-default btn-circle"><i class="fa fa-envelope-square fa-3x"></i><br>Send me an email</h5></a>
 				</div>
 		</div>
 
 		<!-- Footer -->
 		<footer class="container-fluid" id="contactSection">
 			<a href="#myPage" title="Top of Page">
-				<span class="scrollIcon glyphicon glyphicon-triangle-top"></span>
+				<i class="scrollIcon fa fa-arrow-circle-o-up" aria-hidden="true"></i>
 			</a>
-			<p><span class="glyphicon glyphicon-copyright-mark"></span> 2016 Matthew Cucuzza. All rights reserved.</p>
+			<p><span class="glyphicon glyphicon-copyright-mark"></span> 2017 Matthew Cucuzza. All rights reserved.</p>
 		</footer>
 	</body>
 </html>

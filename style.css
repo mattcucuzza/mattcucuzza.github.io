@@ -38,6 +38,7 @@ body {
 #titleSection {
 	margin: 0 auto;
 	text-align: center;
+	height: 83vh;
 	background-color: #FAFAFA;
 }
 
@@ -60,6 +61,14 @@ body {
 	animation: blinker 2.5s linear infinite;
 	color: #4A96AD;
 }
+
+/*.fa-arrow-circle-o-down {
+	color: #4A96AD;
+}
+
+.fa-arrow-circle-o-down:hover {
+	color: #383737;
+}*/
 
 #colorText {
 	color: #4A96AD;
@@ -84,17 +93,17 @@ body {
 	font-size: 30px;
 }
 
-.btn-sm {
-	background-color: #92468e;
-	color: white !important;
-	border-color: #92468e;
+.btn-sm, .btn-sm:active, .btn-primary:focus, .btn-sm:focus {
+	background-color: #4A96AD;
+	color: #fafafa;
+	border-color: #4A96AD;
 
 }
 
-.btn-sm:hover, .btn-sm:active, .btn-primary:focus, .btn-sm:focus {
-	background-color: white;
-	color: #92468e !important;
-	border-color: #92468e;
+.btn-sm:hover {
+	background-color: #383737;
+	color: #FAFAFA !important;
+	border-color: #383737;
 }
 
 .coloredText {
@@ -141,7 +150,7 @@ body {
 	background-color: #CCCCCC;
 	margin: 0 auto;
 	text-align: left;
-	height: 700px;
+	height: 450px;
 	width: 750px;
 	border-radius: 5px;
 	padding-top: 15px;
@@ -199,6 +208,10 @@ body {
 	width: 100%;
 }
 
+#projectPicture:hover {
+	filter: grayscale(100%);
+}
+
 #projectDescription {
 	color: #383737;
 	font-size: 12px;
@@ -208,6 +221,18 @@ body {
 
 .projectTitle {
 	font-weight: 2000;
+}
+
+#achieveSection {
+	background-color: #f1c40f;
+	color: #FAFAFA;
+}
+
+.fa-trophy {
+	background-color: #FAFAFA;
+	padding: 10px;
+	color: #f1c40f;
+	border-radius: 50px;
 }
 
 #contactSection {
@@ -220,12 +245,13 @@ body {
 	text-align: center;
 	box-shadow: 5px 5px 1px rgba(56, 55, 55, 0.5);
 	margin: 20px auto;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	/*width: 400px;*/
 }
 
 .contactButton, .contactButton:focus {
 	color: #9594e5;
-	font-size: 60px;
 	background-color: #FAFAFA;
 	border-radius: 5px;
 	border: none;
@@ -234,7 +260,6 @@ body {
 
 .contactButton:hover {
 	color: #323232;
-	font-size: 60px;
 	background-color: #FAFAFA;
 	border-radius: 30px;
 	border: none;
@@ -254,7 +279,7 @@ footer > p {
 footer .scrollIcon {
     font-size: 20px;
     padding: 5px;
-    margin-bottom: 20px;
+    margin-top: 0px;
     color: #FAFAFA;
 }
 
@@ -273,7 +298,7 @@ footer .scrollIcon:hover {
 	}
 }
 
-@media screen and (min-width:425px) {
+@media screen and (min-width:768px) {
 	.contact {
 		width: 90%;
 	},
@@ -321,5 +346,22 @@ footer .scrollIcon:hover {
 	.contact {
 		width: auto;
 		height: auto;
+	}
+}
+
+@media only screen and (max-device-width: 990px) and (min-device-width: 530px) {
+	#projectPicture {
+		display: block;
+  	max-width:230px;
+  	max-height:95px;
+  	width: auto;
+  	height: auto;
+	},
+}
+
+@media only screen and (max-width:316px) and (min-device-width: 278px) {
+	#about {
+		height: auto;
+		width: 90%;
 	}
 }
