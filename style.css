@@ -3,6 +3,15 @@ body {
 	font-family: 'Inconsolata', monospace;
 }
 
+.navbar-nav {
+    width: 100%;
+	text-align: center;
+}
+.navbar-nav>li {
+    float: none;
+    display: inline-block;
+}
+
 .navbar {
 	background-color: #FAFAFA;
 	margin-bottom: 0;
@@ -32,43 +41,35 @@ body {
 }
 
 .title {
-	padding: 200px 25px;
+	padding-top: 10%;
 }
 
 #titleSection {
 	margin: 0 auto;
 	text-align: center;
-	height: 83vh;
+	/* height: 83vh; */
+	height: 100vh;
 	background-color: #FAFAFA;
 }
 
 .nameLogo {
 	height: 50%;
 	width: 60%;
-	display: block
+	display: block;
 	margin-left: auto;
-  margin-right: auto
+  	margin-right: auto
 }
 
 .picture {
 	margin: 0 auto;
-	width: 200px;
 	height: 200px;
-	border-radius: 100px;
+	/* border-radius: 100px; */
 }
 
 .blink {
 	animation: blinker 2.5s linear infinite;
 	color: #4A96AD;
 }
-
-/*.fa-arrow-circle-o-down {
-	color: #4A96AD;
-}
-
-.fa-arrow-circle-o-down:hover {
-	color: #383737;
-}*/
 
 #colorText {
 	color: #4A96AD;
@@ -150,18 +151,21 @@ body {
 	background-color: #CCCCCC;
 	margin: 0 auto;
 	text-align: left;
-	height: 450px;
-	width: 750px;
+	/* min-height: 450px; */
+	max-width: 750px;
 	border-radius: 5px;
 	padding-top: 15px;
 	font-family: "Courier"
 }
 
+.aboutButton {
+	font-size: 15px;
+}
+
 #terminalAbout {
 	background-color: #383737;
 	font-size: 17px;
-	height: 100%;
-	width: 100%;
+	/* height: 100%; */
 	padding: 10px;
 	border-radius: 5px;
 	box-shadow: 5px 5px 1px rgba(56, 55, 55, 0.5);
@@ -192,19 +196,21 @@ body {
 
 #projectSection {
 	background-color: #6dd686;
+	/* display: table; */
+	height: 100%;
 }
 
 .project {
 	background-color: #FAFAFA;
-	padding: 5px;
-	text-align: center;
-	margin: 20px;
+	padding: 10px;
 	height: 300px;
+	text-align: center;
+	margin-bottom: 20px;
 	box-shadow: 5px 5px 1px rgba(56, 55, 55, 0.5);
 }
 
 #projectPicture {
-	height: 50%;
+	/* height: 50%; */
 	width: 100%;
 }
 
@@ -233,6 +239,12 @@ body {
 	padding: 10px;
 	color: #f1c40f;
 	border-radius: 50px;
+}
+
+hr {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	width: 75%;
 }
 
 #contactSection {
@@ -272,12 +284,12 @@ footer {
 }
 
 footer > p {
-	font-size: 12px;
+	font-size: 14px;
 	color: #FAFAFA;
 }
 
 footer .scrollIcon {
-    font-size: 20px;
+    font-size: 40px;
     padding: 5px;
     margin-top: 0px;
     color: #FAFAFA;
@@ -285,83 +297,10 @@ footer .scrollIcon {
 
 footer .scrollIcon:hover {
     color: #383737;
-    /*border: 2px solid #383737;*/
 }
 
-@media screen and (max-width:950px) {
+@media screen and (min-width:640px) and (max-width: 998px) {
 	.project {
-		margin: auto;
-		margin-bottom: 10px;
-	},
-	#terminalAbout {
-		width: 50%;
-	}
-}
-
-@media screen and (min-width:768px) {
-	.contact {
-		width: 90%;
-	},
-	.project {
-		width: 200px;
-	}
-}
-
-@media only screen and (max-device-width: 479px) and (min-device-width: 320px) {
-	#about {
 		height: auto;
-		width: 100%;
-	},
-	#projectSection {
-		width: auto;
-		height: 90%;
-	},
-	#projectDescription {
-		padding-top: 20px;
-	},
-	.contact {
-		width: auto;
-		height: auto;
-	},
-	#link {
-		width:50%;
-	}
-}
-
-@media only screen and (max-device-width: 800px) and (min-device-width: 480px) {
-	#about {
-		height: auto;
-		width: 90%;
-	},
-	#projectSection {
-		width: auto;
-		height: auto;
-	},
-	#projectPicture {
-		width: 100px;
-	},
-	#projectDescription {
-		padding-top: 20px;
-	},
-	.contact {
-		width: auto;
-		height: auto;
-	}
-}
-
-@media only screen and (max-device-width: 990px) and (min-device-width: 530px) {
-	#projectPicture {
-		display: block;
-  	max-width:230px;
-  	max-height:95px;
-  	width: auto;
-  	height: auto;
-	},
-}
-
-@media only screen and (max-width:316px) and (min-device-width: 278px) {
-	#about {
-		height: auto;
-		width: 90%;
 	}
 }
