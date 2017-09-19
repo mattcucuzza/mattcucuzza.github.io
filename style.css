@@ -12,6 +12,21 @@ body {
     display: inline-block;
 }
 
+.buttons{
+	/* position: absolute; */
+	margin-left: 20px;
+    margin-bottom: 5px;
+    margin-top: -10px;
+    top: 6px;
+    left: 22px;
+    width: 8px;
+    height: 8px;
+    background: #E9B669;
+    border-radius: 50%;
+    box-shadow: -12px 0 0 #F10,
+                12px 0 0 #32CD32;
+}
+
 .navbar {
 	background-color: #FAFAFA;
 	margin-bottom: 0;
@@ -165,9 +180,9 @@ body {
 #terminalAbout {
 	background-color: #383737;
 	font-size: 17px;
-	/* height: 100%; */
 	padding: 10px;
-	border-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
 	box-shadow: 5px 5px 1px rgba(56, 55, 55, 0.5);
 }
 
