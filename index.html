@@ -3,13 +3,18 @@
 
 <head>
 	<meta charset "utf-8">
-	<title> Matt Cucuzza</title>
+	<title> Matthew Cucuzza | Software Engineer</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- Bootstrap Import-->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	 crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+	 crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	 crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+	 crossorigin="anonymous"></script>
 
 	<!-- Stylesheet -->
 	<link href="style.css" rel="stylesheet" type="text/css">
@@ -27,190 +32,276 @@
 	<script src="https://code.highcharts.com/modules/exporting.js"></script>
 </head>
 
-<body>
-	<!-- Scrolling Body -->
-
-	<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-		<!-- Navbar -->
-		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-						<span class="icon-bar"></span>
-       					<span class="icon-bar"></span>
-        				<span class="icon-bar"></span>
-      				</button>
-				</div>
-				<div class="collapse navbar-collapse" id="myNavbar">
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#aboutSection">ABOUT</a></li>
-						<li><a href="#skillsSection">SKILLS</a></li>
-						<li><a href="#projectSection">PROJECTS</a></li>
-						<li><a href="#achieveSection">ACHIEVEMENTS</a></li>
-						<li><a href="#contactSection">CONTACT</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-
-		<!-- Title View -->
-		<div class="container-fluid" id="titleSection">
-			<div class="title">
-				<img draggable="false" src="images/bitmoji.png" class="picture"></img>
-				<h4 class="tagline"><i class="blinker fa fa-terminal blink"></i> Hello, my name is <b id="colorText">Matt Cucuzza!</b></h4>
-				<a href="#aboutSection" class="btn btn-primary btn-sm aboutButton" role="button"><b>Learn More About Me</b></a>
-			</div>
+<body id="site" data-spy="scroll" data-target=".navbar" data-offset="60">
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-md fixed-top" role="navigation">
+		<a class="navbar-brand" href="#"></a>
+		<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar">
+			<span class="fa fa-bars"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbar">
+			<ul class="navbar-nav mx-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="#about">ABOUT</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#skills">SKILLS</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#projects">PROJECTS</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#achievements">ACHIEVEMENTS</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#contact">CONTACT</a>
+				</li>
+			</ul>
 		</div>
+	</nav>
 
-		<!-- About Section -->
-		<div class="container-fluid" id="aboutSection">
-			<h4 id="aboutTitle">About Matt</h4>
-			<div class="row">
-				<div class="col-xs-12">
-					<div id="about">
-						<div class="buttons"></div>
-						<div id="terminalAbout">
-							<br>
-							<p id="prompt">> Matt.location</p>
-							<p id="answer">=> "Staten Island, New York"</p>
-							<p id="prompt">> Matt.education</p>
-							<p id="answer">=> "Quinnipiac University"</p>
-							<p id="prompt">> Matt.degree</p>
-							<p id="answer">=> "Bachelors of Science in Software Engineering"</p>
-							<p id="prompt">> Matt.minor</p>
-							<p id="answer">=> "Mathematics"</p>
-							<p id="prompt">> Matt.interests</p>
-							<p id="answer">=> ["coding", "watching soccer", "watching basketball", "hanging with friends", "playing video games", "listening
-								to music"]</p>
-							<p id="prompt">> Matt.resume</p>
-							<a id="resume" href="resume.pdf">=> resume.pdf</a>
-						</div>
-					</div>
-				</div>
-			</div>
+	<!-- Title View -->
+	<div class="container-fluid" id="title">
+		<div class="title">
+			<img draggable="false" src="images/bitmoji.png" class="picture"></img>
+			<h4 class="tagline">
+				<i class="blinker fa fa-terminal blink"></i> Hello, my name is
+				<b id="colorText">Matt Cucuzza!</b>
+			</h4>
+			<a href="#about" class="btn btn-primary btn-sm aboutButton" role="button">
+				<b>Learn More About Me</b>
+			</a>
+			<a href="resume.pdf" class="btn btn-primary btn-sm aboutButton" role="button">
+				<b>View My Resume</b>
+			</a>
 		</div>
+	</div>
 
-		<!-- Skills -->
-		<div class="container-fluid" id="skillsSection">
-			<h4 id="aboutTitle">Matt's Skills</h4>
-			<div class="col-xs-12 skills">
-				<div id="container" style="min-width: 310px; height: 400px; max-width: 600px; margin-left: auto; margin-right: auto;"></div>
-			</div>
-		</div>
-
-		<!-- Projects -->
-		<div class="container-fluid" id="projectSection">
-			<h4 id="aboutTitle">Projects by Matt</h4>
-			<div class="row">
-				<div class="col-md-4">
-					<div class="project">
-						<a href="https://github.com/mattcucuzza/SEWebsite"><img draggable="false" src="images/SEWebsite.png" id="projectPicture" data-toggle="modal" data-target="#myModal" title ="View project on GitHub"></img></a>
+	<!-- About Section -->
+	<div class="container-fluid" id="about">
+		<h4 id="aboutTitle">About</h4>
+		<div class="row">
+			<div class="col-12">
+				<div class="terminal">
+					<div class="terminal-buttons"></div>
+					<div class="terminal-screen">
 						<br>
-						<div id="projectDescription">
-							<b class="projectTitle">Quinnipiac Software Engineering Website:</b>
-							<p>A website developed for a human-computer interaction class using Bootstrap, which shows potential Quinnipiac students what software engineering is like at Quinnipiac.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="project">
-						<a href="https://github.com/bgillHub/WorkflowSystem"><img draggable="false" src="images/WFMS.png" id="projectPicture" data-toggle="modal" data-target="#myModal" title ="View project on GitHub"></img></a>
-						<br>
-						<div id="projectDescription">
-							<b class="projectTitle">Workflow Management System:</b>
-							<p>A web-based versatile workflow engine where the backend processes states and tasks using a deterministic finite automata developed using Meteor’s Javascript framework.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="project">
-						<a href="https://github.com/mattcucuzza/NBA-Stats"><img draggable="false" src="images/NBAStats.png" id="projectPicture" data-toggle="modal" data-target="#myModal" title ="View project on GitHub"></img></a>
-						<br>
-						<div id="projectDescription">
-							<b class="projectTitle">NBA Stats:</b>
-							<p>A website in development where users are allowed to search for an NBA player by name and find individual stats for each respective player. This is currently in development using AngularJS and Express.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<div class="project">
-						<a href="https://github.com/mattcucuzza/WeatherChecker"><img draggable="false" src="images/Weather.png" id="projectPicture" data-toggle="modal" data-target="#myModal" title ="View project on GitHub"></img></a>
-						<br>
-						<div id="projectDescription">
-							<b class="projectTitle">WeatherChecker:</b>
-							<p>A Javascript application, written using Meteor's framework, that pulls data from Yahoo! to display the current weather and 4 day forecast for a user specified location. </p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="project">
-						<a href="https://github.com/mattcucuzza/Card-Payment"><img draggable="false" src="images/cardpayment.png" id="projectPicture" data-toggle="modal" data-target="#myModal" title ="View project on GitHub"></img></a>
-						<br>
-						<div id="projectDescription">
-							<b class="projectTitle">Card Payment</b>
-							<p>An AngularJS application that simulates selecting a credit card type and filling out information for the card.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="project">
-						<a href="https://github.com/mattcucuzza/FindTheLady"><img draggable="false" src="images/FindTheLady.png" id="projectPicture" data-toggle="modal" data-target="#myModal" title ="View project on GitHub"></img></a>
-						<br>
-						<div id="projectDescription">
-							<b class="projectTitle">FindTheLady:</b>
-							<p>A virtual card game written in Java using the javax.swing package to implement the user interface. The objective of the player is to find the Queen card out of a set of 3 cards.</p>
-						</div>
+						<p id="prompt">> Matt.location</p>
+						<p id="answer">=> "Staten Island, New York"</p>
+						<p id="prompt">> Matt.occupation</p>
+						<p id="answer">=> "Software Engineer @ Fusion Health Management"</p>
+						<p id="prompt">> Matt.education</p>
+						<p id="answer">=> "Quinnipiac University"</p>
+						<p id="prompt">> Matt.degree</p>
+						<p id="answer">=> "Bachelors of Science in Software Engineering"</p>
+						<p id="prompt">> Matt.minor</p>
+						<p id="answer">=> "Mathematics"</p>
+						<p id="prompt">> Matt.interests</p>
+						<p id="answer">=> ["coding", "watching soccer", "watching basketball", "hanging out with friends", "playing video games", "listening
+							to music"]</p>
+						<p id="prompt">> Matt.resume</p>
+						<a id="resume" href="resume.pdf">=> resume.pdf</a>
 					</div>
 				</div>
 			</div>
 		</div>
+	</div>
+
+	<!-- Skills -->
+	<div class="container-fluid" id="skills">
+		<h4 id="aboutTitle">Skills</h4>
+		<div class="col-12 skills">
+			<div id="container" style="min-width: 310px; height: 400px; max-width: 600px; margin-left: auto; margin-right: auto;"></div>
+		</div>
+	</div>
+
+	<!-- Projects -->
+	<div class="container-fluid" id="projects">
+		<h4 id="aboutTitle">Projects</h4>
+		<div class="row">
+			<div class="col-md-4 col-sm-6">
+				<div class="card project-card">
+					<div class="card-body">
+						<a href="https://github.com/mattcucuzza/SEWebsite">
+							<img draggable="false" src="images/SEWebsite.png" id="projectPicture" data-toggle="modal" data-target="#myModal" title="View project on GitHub"></img>
+						</a>
+						<div id="projectDescription">
+							<b>Quinnipiac Software Engineering Website:</b>
+							<p>
+								A proof of concept website developed for a human-computer interaction class, which provides information to potential Quinnipiac
+								students what software engineering is like at Quinnipiac.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div class="card project-card">
+					<div class="card-body">
+						<a href="https://github.com/bgillHub/WorkflowSystem">
+							<img draggable="false" src="images/WFMS.png" id="projectPicture" data-toggle="modal" data-target="#myModal" title="View project on GitHub"></img>
+						</a>
+						<div id="projectDescription">
+							<b>Workflow Management System:</b>
+							<p>
+								A web-based versatile workflow engine where the backend processes states and tasks using a deterministic finite automata
+								developed using Meteor’s Javascript framework
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div class="card project-card">
+					<div class="card-body">
+						<a href="https://github.com/mattcucuzza/NBA-Stats">
+							<img draggable="false" src="images/NBAStats.png" id="projectPicture" data-toggle="modal" data-target="#myModal" title="View project on GitHub"></img>
+						</a>
+						<div id="projectDescription">
+							<b>NBA Stats:</b>
+							<p>
+								A web application where users are allowed to search for an NBA player by name and find individual stats for each respective.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div class="card project-card">
+					<div class="card-body">
+						<a href="https://github.com/mattcucuzza/WeatherChecker">
+							<img draggable="false" src="images/Weather.png" id="projectPicture" data-toggle="modal" data-target="#myModal" title="View project on GitHub"></img>
+						</a>
+						<div id="projectDescription">
+							<b>Weather Checker:</b>
+							<p>
+								A Javascript application, written using Meteor's framework, that pulls data from Yahoo! to display the current weather and
+								4 day forecast for a user specified location.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div class="card project-card">
+					<div class="card-body">
+						<a href="https://github.com/mattcucuzza/Card-Payment">
+							<img draggable="false" src="images/cardpayment.png" id="projectPicture" data-toggle="modal" data-target="#myModal" title="View project on GitHub"></img>
+						</a>
+						<div id="projectDescription">
+							<b>Card Payment:</b>
+							<p>
+								An AngularJS application that simulates selecting a credit card type and filling out information for the card.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div class="card project-card">
+					<div class="card-body">
+						<a href="https://github.com/mattcucuzza/FindTheLady">
+							<img draggable="false" src="images/FindTheLady.png" id="projectPicture" data-toggle="modal" data-target="#myModal" title="View project on GitHub"></img>
+						</a>
+						<div id="projectDescription">
+							<b>Find the Lady:</b>
+							<p>
+								A virtual card game written in Java using the javax.swing package to implement the user interface. The objective of the player
+								is to find the Queen card out of a set of 3 cards.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 		<!-- Achievements -->
-		<div class="container-fluid" id="achieveSection">
-			<h4 id="aboutTitle">Matt's Achievements</h4>
+		<div class="container-fluid" id="achievements">
+			<h4 id="aboutTitle">Achievements</h4>
 			<div class="row">
-				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 text-center">
+				<div class="col-md-3 col-sm-6 text-center">
 					<i class="fa fa-trophy fa-3x" aria-hidden="true"></i>
-					<h4>Deans List<hr>Spring 2017 Semester</h4>
+					<h4>Deans List
+						<hr>Spring 2017 Semester</h4>
 				</div>
-				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 text-center">
+				<div class="col-md-3 col-sm-6 text-center">
 					<i class="fa fa-trophy fa-3x" aria-hidden="true"></i>
-					<h4>Runner Up<hr>Spring 2016 <br/>Quinnipiac University Hackathon</h4>
+					<h4>Runner Up
+						<hr>Spring 2016
+						<br/>Quinnipiac University Hackathon</h4>
 				</div>
-				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 text-center">
+				<div class="col-md-3 col-sm-6 text-center">
 					<i class="fa fa-trophy fa-3x" aria-hidden="true"></i>
-					<h4>Runner Up<hr>Fall 2016<br/>Quinnipiac University Hackathon</h4>
+					<h4>Runner Up
+						<hr>Fall 2016
+						<br/>Quinnipiac University Hackathon</h4>
 				</div>
-				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 text-center">
+				<div class="col-md-3 col-sm-6 text-center">
 					<i class="fa fa-trophy fa-3x" aria-hidden="true"></i>
-					<h4>Dean's List<hr>Fall 2016 Semester</h4>
+					<h4>Dean's List
+						<hr>Fall 2016 Semester</h4>
 				</div>
 			</div>
 		</div>
 
 		<!-- Contact Section -->
-		<div class="container-fluid" id="contactSection">
-			<h4 id="aboutTitle">Contact Matt</h4>
-			<div class="contact">
-				<h5><a href="http://www.github.com/mattcucuzza" class="contactButton btn btn-default btn-circle"><i class="fa fa-github fa-3x"></i><br>Check out my GitHub</h5></a>
-			</div>
-			<div class="contact">
-				<h5><a href="http://www.linkedin.com/in/matthewcucuzza" class="contactButton btn btn-default btn-circle"><i class="fa fa-linkedin-square fa-3x"></i><br>Connect on LinkedIn</h5></a>
-			</div>
-			<div class="contact">
-				<h5><a href="mailto:MatthewACucuzza@gmail.com" class="contactButton btn btn-default btn-circle"><i class="fa fa-envelope-square fa-3x"></i><br>Send me an email</h5></a>
+		<div class="container-fluid" id="contact">
+			<h4 id="aboutTitle">Contact</h4>
+			<div class="row">
+				<div class="col text-center">
+					<div class="card contact-card">
+						<div class="card-body">
+							<div>
+								<a href="http://www.github.com/mattcucuzza" class="contactButton btn btn-default btn-circle">
+									<div class="fa fa-github fa-3x"></div>
+									<span>
+										<h5>GitHub</h5>
+									</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col text-center">
+					<div class="card contact-card">
+						<div class="card-body">
+							<div>
+								<a href="http://www.linkedin.com/in/matthewcucuzza" class="contactButton btn btn-default btn-circle">
+									<div class="fa fa-linkedin-square fa-3x"></div>
+									<span>
+										<h5>LinkedIn</h5>
+									</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col text-center">
+					<div class="card contact-card">
+						<div class="card-body">
+							<div>
+								<a href="mailto:MatthewACucuzza@gmail.com" class="contactButton btn btn-default btn-circle">
+									<div class="fa fa-envelope-square fa-3x"></div>
+									<span>
+										<h5>Email</h5>
+									</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 
 		<!-- Footer -->
-		<footer class="container-fluid" id="contactSection">
-			<a href="#myPage" title="Top of Page">
+		<footer class="container-fluid" id="contact">
+			<a href="#site" title="Top of Page">
 				<i class="scrollIcon fa fa-caret-up" aria-hidden="true"></i>
 			</a>
-			<p><i class="fa fa-copyright" aria-hidden="true"></i> 2017 Matthew Cucuzza. All rights reserved.</p>
+			<p>
+				<i class="fa fa-copyright" aria-hidden="true"></i> 2018 Matthew Cucuzza. All rights reserved.</p>
 		</footer>
-	</body>
+</body>
 
 </html>

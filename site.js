@@ -1,15 +1,15 @@
 /* Scrolling Effect */
-$(document).ready(function () {
-    $(".navbar a, footer a[href='#myPage'], .btn-sm").on('click', function (event) {
-        event.preventDefault();
-        var hash = this.hash;
-        $('html, body').animate({
-            scrollTop: $(hash).offset().top
-        }, 900, function () {
-            window.location.hash = hash;
-        });
-    });
-})
+// $(document).ready(function () {
+//     $(".navbar a, footer a[href='#site'], .btn-sm").on('click', function (event) {
+//         event.preventDefault();
+//         var hash = this.hash;
+//         $('html, body').animate({
+//             scrollTop: $(hash).offset().top
+//         }, 900, function () {
+//             window.location.hash = hash;
+//         });
+//     });
+// })
 
 $(function () {
     // Highcharts.setOptions({
@@ -69,6 +69,10 @@ $(function () {
                         y: 2
                     }, 
                     {
+                        name: 'SCSS',
+                        y: 1
+                    },
+                    {
                         name: 'Python',
                         y: 1
                     }, 
@@ -77,8 +81,8 @@ $(function () {
                         y: 4
                     }, 
                     {
-                        name: 'MySQL',
-                        y: 1
+                        name: 'SQL',
+                        y: 2
                     },
                     {
                         name: 'AngularJS',
@@ -90,23 +94,43 @@ $(function () {
                     }, 
                     {
                         name: 'Photoshop',
-                        y: 5
+                        y: 6
                     },
                     {
                         name: 'Git',
+                        y: 4
+                    },
+                    {
+                        name: 'JavaScript',
                         y: 3
                     },
                     {
-                        name: 'Javascript',
-                        y: 2
+                        name: 'Agile Development',
+                        y: 4
                     },
                     {
-                        name: 'Scrum',
-                        y: 3
-                    },
-                    {
-                        name: 'Node.js',
+                        name: 'ASP.NET Core',
                         y: 0.5
+                    },
+                    {
+                        name: 'Node.JS',
+                        y: 0.5
+                    },
+                    {
+                        name: 'C#',
+                        y: 0.5
+                    },
+                    {
+                        name: 'TypeScript',
+                        y: 0.2
+                    },
+                    {
+                        name: 'Angula dr',
+                        y: 0.2
+                    },
+                    {
+                        name: 'AngularJS',
+                        y: 1
                     }
                 ]
             }]
