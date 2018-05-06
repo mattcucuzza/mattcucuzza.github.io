@@ -125,7 +125,7 @@ $(function () {
                         y: 0.2
                     },
                     {
-                        name: 'Angula dr',
+                        name: 'Angular',
                         y: 0.2
                     },
                     {
